@@ -22,7 +22,7 @@ def nCr(n, r):
 def binomialProbability(n, k, p): 
 
 	return (nCr(n, k) * pow(p, k) *
-						pow(1 - p, n - k)); 
+			    pow(1 - p, n - k)); 
 
 # Driver code 
 n = 10; 
@@ -34,6 +34,7 @@ probability = binomialProbability(n, k, p);
 print("Probability of", k, 
 	"heads when a coin is tossed", end = " "); 
 print(n, "times where probability of each head is", 
-									round(p, 6)); 
+					round(p, 6)); 
 print("is = ", round(probability, 6)); 
+
 
